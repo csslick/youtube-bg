@@ -1,0 +1,54 @@
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+ul {list-style-type: none;}
+a { text-decoration: none;}
+html, body{ height: 100%;}
+/* body { overflow: hidden; } */
+section{
+  /* position: relative; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 { 
+  font-size: 80px;
+  color: #fff;
+}
+
+/* 메인메뉴 */
+#gnb {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  z-index: 99;
+}
+#gnb li{
+  display: inline-block;
+  margin: 20px;
+}
+
+/* 섹션 */
+#s1{
+  background: #FEA47F;
+}
+#s2{
+  background: #55E6C1;
+}
+#s3{
+  background: #D6A2E8;
+}
+
+/* 우측 페이지 인디케이터 */
+#pager {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  z-index: 99;
+}
+#pager li.on a {
+  color: red;
+}

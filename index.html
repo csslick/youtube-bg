@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> 유투브 배경</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 유투브 배경 -->
+    <script src="jquery.youtube-background.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="gnb">
+        <ul>
+          <li><a href="#s1">section1</a></li>
+          <li><a href="#s2">section2</a></li>
+          <li><a href="#s3">section3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav id="pager">
+      <ul>
+        <li class="on"><a href="#s1">1</a></li>
+        <li><a href="#s2">2</a></li>
+        <li><a href="#s3">3</a></li>
+      </ul>
+    </nav>
+
+    <section id="s1">
+      <div class="you-bg" data-youtube="https://youtu.be/hMeiDVv5t8I">
+        <h1>section1</h1>
+      </div>
+    </section>
+    <section id="s2">
+      <h1>section2</h1>
+    </section>
+    <section id="s3">
+      <h1>section3</h1>
+    </section>
+
+    <script>
+      $(function(){
+        $('[data-youtube]').youtube_background();
+      })
+    </script>
+  </body>
+</html>
